@@ -145,15 +145,11 @@ header div p{
 .centrarTitulo{
   text-align: center;
   font-size: 40px;
-  /*padding-top: 11%;
-  padding-left: 7%;*/
 }
 .centraTitulo{
   text-align: center;
   color: white;
   font-size: 40px;
- /* padding-top: 5%;
-  padding-left: 1%;*/
 }
 
 .centrar{
@@ -162,9 +158,6 @@ header div p{
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  /*padding-top: 1%;
-  padding-left: 9%;
-  margin-bottom: 270px;*/
 }
 
 .index__container{
@@ -190,14 +183,12 @@ header div p{
 .contenedor{
   max-width: 800px;
   width: 90%;
-  /**width: min(90%, 120rem);**/
   margin: 30px;
 }
 
 .contenedor__receta{
   max-width: 800px;
   width: 90%;
-  /**width: min(90%, 120rem);**/
   margin: 30px;
   display: grid;
   grid-template-columns:  1fr;
@@ -256,21 +247,16 @@ header div p{
 }
 
 .article__receta{
-  /*border-bottom: solid 5px black;*/
   margin: 20px;
   background-color: rgb(164, 237, 234);
   border: solid 5px black;
   border-radius: 10px;
 }
-/*.receta-article:last-of-type{
-  
-}*/
 
 .article__receta-img{
   max-width: 793px;
   width: 100%;
   height: auto;
-  /*border: solid 5px black;*/
   border-top: solid 5px black;
   border-bottom: solid 5px black;
 }
