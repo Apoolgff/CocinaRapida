@@ -10,7 +10,7 @@
 
  @font-face{
   font-family: Dyslexic;
-  src: url(../Assets/ttf/OpenDyslexic-Bold.ttf);
+  src: url(../assets/ttf/OpenDyslexic-Bold.ttf);
   font-weight: bold;
 }
 
@@ -418,7 +418,7 @@ header div p{
  /*FOOTER*/
 
  .footer{
-    background-image: url(../Assets/Images/backgroundFooter.jpg);
+    background-image: url(../assets/images/backgroundFooter.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
