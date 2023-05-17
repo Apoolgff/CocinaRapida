@@ -1,0 +1,707 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: Dyslexic;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+@font-face {
+  font-family: Dyslexic;
+  src: url(../../assets/ttf/OpenDyslexic-Bold.ttf);
+  font-style: normal;
+}
+.contenedores, .indexMain, .recetaMain, .recetasMain, .nosotrosMain, .contactoMain {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+
+.header {
+  background-image: url(../assets/images/backgroundHeader.jpg);
+  height: 380px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.header__container {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 130px;
+}
+
+.header__container-navbar {
+  display: flex;
+  list-style: none;
+  margin-top: 130px;
+}
+.header__container-navbar li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px;
+}
+.header__container-navbar li a:hover {
+  text-shadow: 4px 3px 2px rgb(136, 136, 136);
+}
+
+.logo {
+  width: 200px;
+  margin: 80px 0 0 40px;
+  transition: all 0.5s ease;
+}
+.logo:hover {
+  object-fit: cover;
+  scale: 1.2;
+  transition: all 1s ease;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+header div p {
+  font-size: 30px;
+}
+
+@media (max-width: 1419px) {
+  /*HEADER*/
+  .header__container-navbar {
+    display: inherit;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  header div p {
+    font-size: 30px;
+  }
+  .header__container {
+    margin-left: 15px;
+    margin-top: 120px;
+  }
+}
+@media (max-width: 1010px) {
+  /*HEADER*/
+  .header__container-navbar {
+    display: inherit;
+  }
+  .header__container-navbar li a {
+    font-size: 20px;
+  }
+  .header__container {
+    margin-left: 20px;
+    margin-top: 120px;
+  }
+}
+@media (max-width: 747px) {
+  /*HEADER*/
+  .header__container-navbar li a {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  header div p {
+    font-size: 25px;
+  }
+  .logo {
+    width: 90px;
+    margin-top: 120px;
+    margin-left: 0px;
+  }
+  .header__container {
+    margin-left: 0px;
+    margin-top: 120px;
+  }
+}
+@media (max-width: 559px) {
+  /*HEADER*/
+  .header__container-navbar li a {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  header div p {
+    font-size: 20px;
+  }
+  .logo {
+    width: 90px;
+    margin-top: 120px;
+    margin-left: 0px;
+  }
+  .header__container {
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 356px) {
+  /*HEADER*/
+  h1 {
+    font-size: 30px;
+  }
+  header div p {
+    font-size: 10px;
+  }
+  .logo {
+    width: 70px;
+    margin-top: 120px;
+    margin-left: 0px;
+  }
+  .header__container {
+    margin-left: 0px;
+    margin-top: 100px;
+  }
+}
+.footer {
+  background-image: url(../assets/images/backgroundFooter.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__container-navbar {
+  display: flex;
+  list-style: none;
+  margin-top: 160px;
+}
+.footer__container-navbar li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px;
+  list-style: none;
+}
+.footer__container-navbar li a:hover {
+  text-shadow: 4px 3px 2px rgb(136, 136, 136);
+}
+
+.logoFooter {
+  width: 400px;
+  padding: 10px;
+}
+
+@media (max-width: 1419px) {
+  /*FOOTER*/
+  .logoFooter {
+    width: 270px;
+    padding: 10px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 1010px) {
+  /*FOOTER*/
+  .footer {
+    height: 300px;
+  }
+  .footer__container-navbar {
+    display: inherit;
+    list-style: none;
+    margin-top: 100px;
+  }
+  .logoFooter {
+    width: 250px;
+    padding: 10px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 747px) {
+  /*FOOTER*/
+  .footer {
+    height: 250px;
+  }
+  .footer__container-navbar {
+    display: inherit;
+    list-style: none;
+    margin-top: 100px;
+  }
+  .logoFooter {
+    width: 200px;
+    padding: 10px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 559px) {
+  /*FOOTER*/
+  .footer {
+    height: 150px;
+  }
+  .footer__container-navbar {
+    display: inherit;
+    list-style: none;
+    margin-top: 40px;
+  }
+  .footer__container-navbar li a {
+    font-size: 20px;
+  }
+  .logoFooter {
+    width: 120px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 356px) {
+  /*FOOTER*/
+  .footer {
+    height: 50px;
+  }
+  .footer__container-navbar {
+    display: inherit;
+    list-style: none;
+    margin-top: 0px;
+  }
+  .footer__container-navbar li a {
+    font-size: 5px;
+  }
+  .logoFooter {
+    width: 40px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+}
+.contactoMain {
+  background-image: url(../assets/images/backgroundContacto.jpg);
+}
+
+.centraTitulo {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}
+
+.comentario {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  border: 10px double #ccc;
+  padding: 5px;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type=text], input[type=email] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nosotrosMain {
+  background-image: url(../assets/images/backgroundNosotros.jpg);
+}
+
+.centrarTitulo {
+  text-align: center;
+  font-size: 40px;
+}
+
+.centrar {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.recetasMain {
+  background-image: url(../assets/images/backgroundRecetas.jpg);
+}
+
+.containerMio {
+  display: grid;
+  grid-template-columns: 2;
+  gap: 4px;
+}
+
+.contenedor {
+  max-width: 800px;
+  width: 90%;
+  margin: 30px;
+}
+
+.contenido__principal {
+  grid-column: 1/span 1;
+}
+
+.article__receta {
+  margin: 20px;
+  background-color: rgb(164, 237, 234);
+  border: solid 5px black;
+  border-radius: 10px;
+}
+
+.article__receta-img {
+  max-width: 793px;
+  width: 100%;
+  height: auto;
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+}
+
+.description {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.sidebar {
+  grid-column: 2/span 1;
+  justify-self: center;
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+  margin: 0 10px;
+  font-size: 40px;
+  border: solid 5px black;
+  border-radius: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top: 30%;
+  margin-right: 10%;
+  background-image: linear-gradient(to top, rgb(126, 183, 181) 20%, rgb(164, 237, 234) 80%);
+}
+.sidebar h4 {
+  text-decoration: underline;
+  font-size: 25px;
+  text-align: center;
+}
+.sidebar a {
+  text-decoration: none;
+  color: black;
+}
+.sidebar li {
+  border-bottom: solid 2px black;
+}
+.sidebar li:last-of-type {
+  border-bottom: none;
+}
+.sidebar a:hover {
+  text-shadow: -9px 6px 5px rgba(0, 0, 0, 0.79);
+}
+
+.button__deco {
+  display: block;
+  width: 30%;
+  background-color: black;
+  font-family: Dyslexic;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: solid 5px gray;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.button__deco:hover {
+  background-color: gray;
+  border: solid 5px black;
+  color: black;
+}
+
+@media (max-width: 1010px) {
+  /*MAIN*/
+  .containerMio {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 4px;
+  }
+  .contenedor {
+    margin: 0 auto;
+  }
+  .article__receta {
+    grid-row: 2;
+    justify-self: center;
+    align-self: center;
+  }
+  /*ASIDE*/
+  .sidebar {
+    grid-row: 1;
+    grid-column: 1;
+    margin: 10px auto;
+    justify-self: center;
+    align-self: center;
+  }
+}
+.recetaMain {
+  background-image: url(../assets/images/recetaBackground.jpg);
+}
+
+.borderMio {
+  border-top: solid 5px black;
+  border-bottom: solid 5px black;
+}
+
+.contenedor__receta {
+  max-width: 800px;
+  width: 90%;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+  column-gap: 10px;
+}
+
+.img__receta {
+  max-width: 793px;
+  width: 100%;
+  height: auto;
+  border: solid 5px black;
+}
+
+/*Listas*/
+.ul, .ol {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.button__deco {
+  display: block;
+  width: 30%;
+  background-color: rgb(0, 0, 0);
+  font-family: Dyslexic;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: solid 5px gray;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.button__deco:hover {
+  background-color: gray;
+  border: solid 5px black;
+  color: black;
+}
+
+.indexMain {
+  background-image: url(../assets/images/backgroundMain2.jpg);
+}
+
+.index__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  object-fit: cover;
+}
+
+.heading {
+  font-size: 70px;
+  font-family: Dyslexic;
+  text-decoration: underline;
+  margin-top: 50px;
+  text-shadow: -9px 6px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Botones*/
+.no-deco {
+  text-decoration: none;
+  color: black;
+}
+
+.imageButton {
+  border: none;
+  cursor: pointer;
+  max-width: 60%;
+  height: 60%;
+  background-color: transparent;
+  font-size: 40px;
+  word-wrap: break-word;
+  font-family: Dyslexic;
+  font-weight: bold;
+  filter: drop-shadow(-19px 26px 38px #000);
+}
+.imageButton img {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  transition: all 0.5s ease;
+}
+.imageButton img:hover {
+  scale: 1.3;
+  transition: all 1s ease;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.center {
+  grid-row: 2/span 1;
+  grid-column: 2/span 1;
+  justify-self: center;
+  align-self: start;
+}
+
+.topLeft {
+  grid-row: 1/span 1;
+  grid-column: 1/span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.topRight {
+  grid-row: 1/span 1;
+  grid-column: 3/span 1;
+  justify-self: center;
+  align-self: center;
+}
+
+.bottomLeft {
+  grid-row: 3/span 1;
+  grid-column: 1/span 1;
+  justify-self: center;
+  align-self: start;
+}
+
+.bottomRight {
+  grid-row: 3/span 1;
+  grid-column: 3/span 1;
+  justify-self: center;
+  align-self: start;
+}
+
+.button__deco {
+  display: block;
+  width: 30%;
+  background-color: black;
+  font-family: Dyslexic;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border: solid 5px gray;
+  font-size: 15px;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.button__deco:hover {
+  background-color: gray;
+  border: solid 5px black;
+  color: black;
+}
+
+@media (max-width: 1419px) {
+  /*MAIN*/
+  .heading {
+    font-size: 70px;
+  }
+  .imageButton {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1010px) {
+  /*MAIN*/
+  .heading {
+    font-size: 60px;
+  }
+  .imageButton {
+    font-size: 20px;
+  }
+}
+@media (max-width: 747px) {
+  /*MAIN*/
+  .imageButton {
+    font-size: 40px;
+  }
+  .index__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .center {
+    grid-row: 3/span 1;
+    grid-column: 1/span 1;
+    justify-self: center;
+    align-self: center;
+  }
+  .topLeft {
+    grid-row: 1/span 1;
+    grid-column: 1/span 1;
+    justify-self: center;
+    align-self: center;
+  }
+  .topRight {
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+    justify-self: center;
+    align-self: center;
+  }
+  .bottomLeft {
+    grid-row: 4/span 1;
+    grid-column: 1/span 1;
+    justify-self: center;
+    align-self: center;
+  }
+  .bottomRight {
+    grid-row: 5/span 1;
+    grid-column: 1/span 1;
+    justify-self: center;
+    align-self: center;
+  }
+}
+@media (max-width: 559px) {
+  /*MAIN*/
+  .heading {
+    font-size: 40px;
+  }
+  .imageButton {
+    font-size: 25px;
+  }
+}
+@media (max-width: 356px) {
+  /*MAIN*/
+  .heading {
+    font-size: 35px;
+  }
+  .imageButton {
+    font-size: 10px;
+  }
+}

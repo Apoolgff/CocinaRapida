@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+    font-family: Dyslexic;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  h3 {
+    font-size: 40px;
+  }
+
+  @font-face{
+    font-family: Dyslexic;
+    src: url(../../assets/ttf/OpenDyslexic-Bold.ttf);
+    font-style: normal;
+  }
+
+  //Extends
+
+  .contenedores{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    border-top: 5px solid $negro;
+    border-bottom: 5px solid $negro;
+  }
+
+  //mixin
+
+  @mixin gridTemplate($columns){
+    display: grid;
+    grid-template-columns: $columns;
+    gap: 4px;
+  }
+
+  @mixin templateGrid($colNum){
+    display: grid;
+    grid-template-columns: repeat($colNum, 1fr);
+    grid-template-rows: repeat($colNum, 1fr);
+    object-fit: cover;
+  }
+
+  @mixin girdElements($row, $column, $align)
+  {
+    grid-row: $row / span 1;
+    grid-column: $column / span 1;
+    justify-self: center;
+    align-self: $align;
+  }

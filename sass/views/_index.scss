@@ -1,0 +1,147 @@
+.indexMain {
+    background-image: url(../assets/images/backgroundMain2.jpg);
+    @extend .contenedores;
+  }
+
+  .index__container {
+    @include templateGrid(3);
+  }
+  
+  .heading {
+    font-size: 70px;
+    font-family: Dyslexic;
+    text-decoration: underline;
+    margin-top: 50px;
+    text-shadow: -9px 6px 5px rgba(0, 0, 0, 0.5);
+  }
+  /*Botones*/
+  .no-deco {
+    text-decoration: none;
+    color: $negro;
+  }
+  
+  .imageButton {
+    border: none;
+    cursor: pointer;
+    max-width: 60%;
+    height: 60%;
+    background-color: transparent;
+    font-size: 40px;
+    word-wrap: break-word;
+    font-family: Dyslexic;
+    font-weight: bold;
+    filter: drop-shadow((-19px) 26px 38px #000);
+  
+    img {
+      &:hover {      
+        scale: 1.3;
+        transition: all 1s ease;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+  
+      width: 100%;
+      height: 100%;
+      max-height: 100%;
+      transition: all 0.5s ease;
+    }
+  }
+  
+  .center {
+    @include girdElements(2, 2, start);
+  }
+  
+  .topLeft {
+    @include girdElements(1, 1, center);
+  }
+  
+  .topRight {
+    @include girdElements(1, 3, center);
+  }
+  
+  .bottomLeft {
+    @include girdElements(3, 1, start);
+  }
+  
+  .bottomRight {
+    @include girdElements(3, 3, start);
+  }
+  
+  .button__deco {
+    display: block;
+    width: 30%;
+    background-color: $negro;
+    font-family: Dyslexic;
+    text-align: center;
+    color: $blanco;
+    text-decoration: none;
+    border: solid 5px $gris;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+  
+    &:hover {
+      background-color: $gris;
+      border: solid 5px $negro;
+      color: $negro;
+    }
+  }
+  
+  @media (max-width: 1419px) {
+    /*MAIN*/
+  
+    .heading {
+      font-size: 70px;
+    }
+  
+    .imageButton {
+      font-size: 25px;
+    }
+  }
+  
+  @media (max-width: 1010px) {
+    /*MAIN*/
+    .heading {
+      font-size: 60px;
+    }
+  
+    .imageButton {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 747px) {
+    /*MAIN*/
+    .imageButton {
+      font-size: 40px;
+    }
+  
+    .index__container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5, 1fr);
+    }
+  }
+  
+  @media (max-width: 559px) {
+    /*MAIN*/
+    .heading {
+      font-size: 40px;
+    }
+  
+    .imageButton {
+      font-size: 25px;
+    }  
+  }
+  
+  @media (max-width: 356px) {
+    /*MAIN*/
+  
+    .heading {
+      font-size: 35px;
+    }
+  
+    .imageButton {
+      font-size: 10px;
+    }
+  }

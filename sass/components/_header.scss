@@ -1,0 +1,165 @@
+.header {
+    background-image: url(../assets/images/backgroundHeader.jpg);
+    height: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  
+  .header__container {
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 130px;
+  }
+  
+  .header__container-navbar {
+    display: flex;
+    list-style: none;
+    margin-top: 130px;
+  
+    li a {
+      color: $negro;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 30px;
+      margin: 10px;
+  
+      &:hover {
+        text-shadow: 4px 3px 2px rgb(136, 136, 136);
+      }
+    }
+  }
+  
+  .logo {
+    width: 200px;
+    margin: 80px 0 0 40px;
+    transition: all 0.5s ease;
+  
+    &:hover {
+      object-fit: cover;
+      scale: 1.2;
+      transition: all 1s ease;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+  }
+  
+  header div p {
+    font-size: 30px;
+  }
+
+  @media (max-width: 1419px) {
+    /*HEADER*/
+  
+    .header__container-navbar {
+      display: inherit;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    header div p {
+      font-size: 30px;
+    }
+  
+    .header__container {
+      margin-left: 15px;
+      margin-top: 120px;
+    }
+  }
+  
+  @media (max-width: 1010px) {
+    /*HEADER*/
+  
+    .header__container-navbar {
+      display: inherit;
+  
+      li a {
+        font-size: 20px;
+      }
+    }
+  
+    .header__container {
+      margin-left: 20px;
+      margin-top: 120px;
+    }
+  }
+  
+  @media (max-width: 747px) {
+    /*HEADER*/
+  
+    .header__container-navbar li a {
+      font-size: 15px;
+    }
+  
+    h1 {
+      font-size: 35px;
+    }
+  
+    header div p {
+      font-size: 25px;
+    }
+  
+    .logo {
+      width: 90px;
+      margin-top: 120px;
+      margin-left: 0px;
+    }
+  
+    .header__container {
+      margin-left: 0px;
+      margin-top: 120px;
+    }
+  }
+  
+  @media (max-width: 559px) {
+    /*HEADER*/
+  
+    .header__container-navbar li a {
+      font-size: 15px;
+    }
+  
+    h1 {
+      font-size: 35px;
+    }
+  
+    header div p {
+      font-size: 20px;
+    }
+  
+    .logo {
+      width: 90px;
+      margin-top: 120px;
+      margin-left: 0px;
+    }
+  
+    .header__container {
+      margin-left: 0px;
+      margin-top: 100px;
+    }
+  }
+  
+  @media (max-width: 356px) {
+    /*HEADER*/
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    header div p {
+      font-size: 10px;
+    }
+  
+    .logo {
+      width: 70px;
+      margin-top: 120px;
+      margin-left: 0px;
+    }
+  
+    .header__container {
+      margin-left: 0px;
+      margin-top: 100px;
+    }
+  }
+  

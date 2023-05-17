@@ -1,0 +1,15 @@
+{
+  "name": "preentrega1ferro",
+  "version": "1.0.0",
+  "description": "**Nombre: Paolo Ferro**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "sass ./sass/main.scss ./css/main.css -w --no-source-map"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.62.1"
+  }
+}
