@@ -1,7 +1,7 @@
 .nosotrosMain {
-    background-image: url(../assets/images/backgroundNosotros.jpg);
+    background-image: url(../assets/images/backgroundNosotros.webp);
     @extend .contenedores;
-  }
+  
 
   .centrarTitulo {
     text-align: center;
@@ -14,4 +14,24 @@
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+
+    @media (max-width: 1010px) {
+      font-size: 25px;
+    }
+
+    @media (max-width: 747px) {
+      font-size: 25px;
+      width: 90%;
+    }
+
+    @media (max-width: 559px) {
+      font-size: 20px;
+      width: 90%;
+    }
+
+    @media (max-width: 356px) {
+      font-size: 15px;
+      width: 90%;
+    }
   }
+}

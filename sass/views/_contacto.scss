@@ -1,9 +1,7 @@
 .contactoMain {
-    background-image: url(../assets/images/backgroundContacto.jpg);
+    background-image: url(../assets/images/backgroundContacto.webp);
     @extend .contenedores;
-  }
 
-  
   .centraTitulo {
     text-align: center;
     color: $blanco;
@@ -18,41 +16,60 @@
   }
 
   form {
-    width: 50%;
+    max-width: 700px;
+    width: 70%;
     margin: auto;
     border: 10px double #ccc;
     padding: 5px;
     color: $blanco;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input {
-    &[type="text"], &[type="email"] {
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    input {
+      &[type="text"], &[type="email"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+    
+    textarea {
       width: 100%;
       padding: 10px;
       margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+    
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+    }
+
+    @media (max-width: 1010px) {
+          width: 65%;
+    }
+    
+    @media (max-width: 747px) {
+          width: 75%;
+    }
+    
+    @media (max-width: 559px) {
+          width: 85%;
+    }
+    
+    @media (max-width: 356px) {
+          min-width: 95%;
+    }
   }
-  
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+}

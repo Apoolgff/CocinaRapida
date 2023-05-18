@@ -35,6 +35,11 @@ h1 {
     border-top: 5px solid $negro;
     border-bottom: 5px solid $negro;
   }
+  
+  .listas{
+    font-size: 20px;
+    margin: 20px 0;
+  }
 
   //mixin
 
@@ -44,10 +49,10 @@ h1 {
     gap: 4px;
   }
 
-  @mixin templateGrid($colNum){
+  @mixin templateGrid($colNum, $rowNum){
     display: grid;
     grid-template-columns: repeat($colNum, 1fr);
-    grid-template-rows: repeat($colNum, 1fr);
+    grid-template-rows: repeat($rowNum, 1fr);
     object-fit: cover;
   }
 

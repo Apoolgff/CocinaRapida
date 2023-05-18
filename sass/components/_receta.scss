@@ -1,0 +1,55 @@
+.borderMio {
+  border-top: solid 5px $negro;
+  border-bottom: solid 5px $negro;
+
+
+  &.recetaMain {
+    background-image: url(../assets/images/recetaBackground.webp);
+    @extend .contenedores;
+
+
+  .contenedor__receta {
+      max-width: 800px;
+      width: 90%;
+      margin: 30px;
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      align-content: center;
+      column-gap: 10px;
+  
+
+    .img__receta {
+        max-width: 793px;
+        width: 100%;
+        height: auto;
+        border: solid 5px $negro;
+    }
+
+      .ul, .ol {
+      @extend .listas;
+    }
+
+    .button__deco {
+        display: block;
+        width: 30%;
+        background-color: rgb(0, 0, 0);
+        font-family: Dyslexic;
+        text-align: center;
+        color: $blanco;
+        text-decoration: none;
+        border: solid 5px $gris;
+        font-size: 15px;
+        padding: 5px;
+        margin: 10px 0;
+        border-radius: 10px;
+      
+        &:hover {
+          background-color: $gris;
+          border: solid 5px $negro;
+          color: $negro;
+        }
+      }
+    }
+  }
+}
