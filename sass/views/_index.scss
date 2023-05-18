@@ -52,23 +52,23 @@
       }
 
       &.center {
-        @include girdElements(2, 2, start);
+        @include gridElements(2, 2, start);
       }
 
       &.topLeft {
-        @include girdElements(1, 1, center);
+        @include gridElements(1, 1, center);
       }
 
       &.topRight {
-        @include girdElements(1, 3, center);
+        @include gridElements(1, 3, center);
       }
 
       &.bottomLeft {
-        @include girdElements(3, 1, start);
+        @include gridElements(3, 1, start);
       }
 
       &.bottomRight {
-        @include girdElements(3, 3, start);
+        @include gridElements(3, 3, start);
       }
     }
 
@@ -91,23 +91,23 @@
       .imageButton {
         font-size: 40px;
         &.center {
-          @include girdElements(3, 1, center);
+          @include gridElements(3, 1, center);
         }
   
         &.topLeft {
-          @include girdElements(1, 1, center);
+          @include gridElements(1, 1, center);
         }
   
         &.topRight {
-          @include girdElements(2, 1, center);
+          @include gridElements(2, 1, center);
         }
   
         &.bottomLeft {
-          @include girdElements(4, 1, start);
+          @include gridElements(4, 1, start);
         }
   
         &.bottomRight {
-          @include girdElements(5, 1, start);
+          @include gridElements(5, 1, start);
         }
       }
     }
