@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Happydayschool;
+  src: url(/assets/ttf/OpenDyslexic-Bold.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: Happydayschool;
+  src: url(/assets/ttf/HappyDaySchool.ttf);
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -19,16 +29,6 @@ h3 {
   font-size: 40px;
 }
 
-@font-face {
-  font-family: Dyslexic;
-  src: url(../assets/ttf/OpenDyslexic-Bold.ttf);
-  font-style: normal;
-}
-@font-face {
-  font-family: Happydayschool;
-  src: url(../assets/ttf/HappyDaySchool.ttf);
-  font-style: normal;
-}
 @keyframes myAnim {
   0% {
     transform: translate(0);
