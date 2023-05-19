@@ -4,19 +4,19 @@
       box-sizing: border-box;
   }
   @font-face{
-    font-family: Happydayschool;
-    src: url(./assets/fonts/HappyDaySchool.ttf) format(truetype);
+    font-family: FasterOne;
+    src: url(../../assets/fonts/FasterOne-Regular.ttf) format(truetype);
     font-style: normal;
   }
   @font-face{
     font-family: Dyslexic;
-    src: url(./assets/fonts/OpenDyslexic-Bold.ttf) format(truetype);
+    src: url(../../assets/fonts/OpenDyslexic-Bold.ttf) format(truetype);
     font-style: normal;
   }
 
   h1 {
     font-size: 60px;
-    font-family: Dyslexic;
+    font-family: FasterOne;
     text-align: center;
   }
   
