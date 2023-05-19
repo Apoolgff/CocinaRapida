@@ -24,6 +24,36 @@ h3 {
   src: url(../../assets/ttf/OpenDyslexic-Bold.ttf);
   font-style: normal;
 }
+@font-face {
+  font-family: Happydayschool;
+  src: url(../../assets/ttf/HappyDaySchool.ttf);
+  font-style: normal;
+}
+@font-face {
+  font-family: Teamspirit;
+  src: url(../../assets/ttf/TeamSpiritNF.ttf);
+  font-style: normal;
+}
+@keyframes myAnim {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
 .contenedores, .indexMain, .nosotrosMain, .contactoMain, .borderMio.recetaMain, .containerMio.recetasMain {
   background-size: cover;
   background-position: center;
@@ -331,10 +361,11 @@ h3 {
   font-size: 40px;
   border: solid 5px black;
   border-radius: 10px;
-  padding-left: 50px;
+  padding-left: 20px;
   padding-right: 50px;
   margin-top: 30%;
   margin-right: 10%;
+  font-family: Dyslexic;
   background-image: linear-gradient(to top, rgb(126, 183, 181) 20%, rgb(164, 237, 234) 80%);
 }
 @media (max-width: 1010px) {
@@ -344,6 +375,12 @@ h3 {
     margin: 10px auto;
     justify-self: center;
     align-self: center;
+  }
+}
+@media (max-width: 356px) {
+  .containerMio.recetasMain .sidebar {
+    width: 80%;
+    font-size: 30px;
   }
 }
 .containerMio.recetasMain .sidebar h4 {
@@ -361,7 +398,7 @@ h3 {
   text-decoration: none;
   color: black;
 }
-.containerMio.recetasMain .sidebar li a a:hover {
+.containerMio.recetasMain .sidebar li a:hover {
   text-shadow: -9px 6px 5px rgba(0, 0, 0, 0.79);
 }
 
@@ -520,20 +557,20 @@ h3 {
   background-image: url(../assets/images/backgroundMain2.webp);
 }
 .indexMain .heading {
-  font-size: 90px;
-  font-family: Dyslexic;
-  text-decoration: underline;
+  font-size: 110px;
+  font-family: Happydayschool;
   margin-top: 50px;
-  text-shadow: -9px 6px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: -5px 3px 5px rgba(0, 0, 0, 0.5);
+  animation: myAnim 2s linear 0s infinite normal none;
 }
 @media (max-width: 559px) {
   .indexMain .heading {
-    font-size: 60px;
+    font-size: 110px;
   }
 }
 @media (max-width: 356px) {
   .indexMain .heading {
-    font-size: 45px;
+    font-size: 80px;
   }
 }
 .indexMain .index__container {

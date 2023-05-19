@@ -3,17 +3,18 @@
   @extend .contenedores;
 
   .heading {
-    font-size: 90px;
-    font-family: Dyslexic;
-    text-decoration: underline;
+    font-size: 110px;
+    font-family: Happydayschool;
     margin-top: 50px;
-    text-shadow: -9px 6px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: -5px 3px 5px rgba(0, 0, 0, 0.5);
+    animation: myAnim 2s linear 0s infinite normal none;
+    
 
     @media (max-width: 559px) {
-        font-size: 60px;
+        font-size: 110px;
     }
     @media (max-width: 356px) {
-      font-size: 45px;
+      font-size: 80px;
     }
   }
 

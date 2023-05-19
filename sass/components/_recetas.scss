@@ -84,10 +84,11 @@
       font-size: 40px;
       border: solid 5px $negro;
       border-radius: 10px;
-      padding-left: 50px;
+      padding-left: 20px;
       padding-right: 50px;
       margin-top: 30%;
       margin-right: 10%;
+      font-family: Dyslexic;
       background-image: linear-gradient(to top, rgb(126, 183, 181) 20%, rgb(164, 237, 234) 80%);
 
       @media (max-width: 1010px) {
@@ -96,6 +97,10 @@
           margin: 10px auto;
           justify-self: center;
           align-self: center;
+      }
+      @media (max-width: 356px) {
+        width: 80%;
+        font-size: 30px;
       }
 
       h4 {
@@ -115,7 +120,7 @@
           text-decoration: none;
           color: $negro;
         
-          a:hover {
+          &:hover {
             text-shadow: -9px 6px 5px rgba(0, 0, 0, 0.79);
           }
         }
