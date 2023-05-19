@@ -5,14 +5,20 @@
   }
   @font-face{
     font-family: FasterOne;
-    src: url(../assets/fonts/FasterOne-Regular.ttf) format(truetype);
+    src: url(../../assets/fonts/FasterOne-Regular.ttf) format(truetype);
     font-style: normal;
   }
   @font-face{
-    font-family: Dyslexic;
-    src: url(../../assets/fonts/OpenDyslexic-Bold.ttf) format(truetype);
+    font-family: Monofett;
+    src: url(../../assets/fonts/Monofett-Regular.ttf) format(truetype);
     font-style: normal;
   }
+  @font-face{
+    font-family: Shojumaru;
+    src: url(../../assets/fonts/Shojumaru-Regular.ttf) format(truetype);
+    font-style: normal;
+  }
+ 
 
   h1 {
     font-size: 60px;
