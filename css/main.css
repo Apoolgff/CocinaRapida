@@ -10,11 +10,6 @@
   font-style: normal;
 }
 @font-face {
-  font-family: Monofett;
-  src: url(../assets/fonts/Monofett-Regular.ttf) format(truetype);
-  font-style: normal;
-}
-@font-face {
   font-family: Shojumaru;
   src: url(../assets/fonts/Shojumaru-Regular.ttf) format(truetype);
   font-style: normal;
@@ -429,7 +424,6 @@ h3 {
   display: block;
   width: 30%;
   background-color: rgb(0, 0, 0);
-  font-family: Dyslexic;
   text-align: center;
   color: white;
   text-decoration: none;
@@ -558,19 +552,19 @@ h3 {
 }
 .indexMain .heading {
   font-size: 110px;
-  font-family: Monofett;
+  font-family: FasterOne;
   margin-top: 50px;
   text-shadow: -5px 3px 5px rgba(0, 0, 0, 0.5);
   animation: myAnim 2s linear 0s infinite normal none;
 }
 @media (max-width: 559px) {
   .indexMain .heading {
-    font-size: 110px;
+    font-size: 60px;
   }
 }
 @media (max-width: 356px) {
   .indexMain .heading {
-    font-size: 80px;
+    font-size: 45px;
   }
 }
 .indexMain .index__container {

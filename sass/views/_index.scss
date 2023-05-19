@@ -4,17 +4,17 @@
 
   .heading {
     font-size: 110px;
-    font-family: Monofett;
+    font-family: FasterOne;
     margin-top: 50px;
     text-shadow: -5px 3px 5px rgba(0, 0, 0, 0.5);
     animation: myAnim 2s linear 0s infinite normal none;
     
 
     @media (max-width: 559px) {
-        font-size: 110px;
+        font-size: 60px;
     }
     @media (max-width: 356px) {
-      font-size: 80px;
+      font-size: 45px;
     }
   }
 
