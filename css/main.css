@@ -29,6 +29,10 @@ h3 {
   font-size: 40px;
 }
 
+h4 {
+  font-size: 30px;
+}
+
 @keyframes myAnim {
   0% {
     transform: translate(0);
@@ -280,7 +284,7 @@ h3 {
 
 .containerMio {
   display: grid;
-  grid-template-columns: 2;
+  grid-template-columns: repeat(1, 1fr);
   gap: 4px;
 }
 .containerMio.recetasMain {
@@ -289,30 +293,27 @@ h3 {
 .containerMio.recetasMain .contenedor {
   max-width: 800px;
   width: 90%;
-  margin: 30px;
+  margin: auto;
 }
-.containerMio.recetasMain .contenedor.contenido-principal {
-  grid-column: 1/span 1;
-}
-.containerMio.recetasMain .contenedor.contenido-principal .article__receta {
+.containerMio.recetasMain .contenedor .article__receta {
   margin: 20px;
   background-color: rgb(164, 237, 234);
   border: solid 5px black;
   border-radius: 10px;
 }
-.containerMio.recetasMain .contenedor.contenido-principal .article__receta-img {
+.containerMio.recetasMain .contenedor .article__receta-img {
   max-width: 793px;
   width: 100%;
   height: auto;
   border-top: solid 5px black;
   border-bottom: solid 5px black;
 }
-.containerMio.recetasMain .contenedor.contenido-principal .article__receta .description {
+.containerMio.recetasMain .contenedor .article__receta .description {
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
 }
-.containerMio.recetasMain .contenedor.contenido-principal .article__receta .description .button__deco {
+.containerMio.recetasMain .contenedor .article__receta .description .button__deco {
   display: block;
   width: 30%;
   background-color: black;
@@ -326,15 +327,26 @@ h3 {
   margin: 10px 0;
   border-radius: 10px;
 }
-.containerMio.recetasMain .contenedor.contenido-principal .article__receta .description .button__deco:hover {
+.containerMio.recetasMain .contenedor .article__receta .description .button__deco:hover {
   background-color: gray;
   border: solid 5px black;
   color: black;
 }
+@media (max-width: 559px) {
+  .containerMio.recetasMain .contenedor .article__receta .description .button__deco {
+    width: 100%;
+  }
+}
+@media (max-width: 356px) {
+  .containerMio.recetasMain .contenedor .article__receta .description .button__deco {
+    width: 100%;
+    font-size: 10px;
+  }
+}
 @media (max-width: 1010px) {
   .containerMio.recetasMain .containerMio {
     display: grid;
-    grid-template-columns: 1;
+    grid-template-columns: repeat(1, 1fr);
     gap: 4px;
   }
   .containerMio.recetasMain .containerMio .contenedor {
@@ -347,21 +359,21 @@ h3 {
   }
 }
 .containerMio.recetasMain .sidebar {
-  grid-column: 2/span 1;
+  grid-row: 1/span 1;
   justify-self: center;
-  max-width: 300px;
-  width: 100%;
-  height: 300px;
-  margin: 0 10px;
-  font-size: 35px;
+  width: 90%;
+  height: 150px;
+  margin: 30px;
+  padding: 10px;
+  font-size: 30px;
   border: solid 5px black;
   border-radius: 10px;
-  padding-left: 20px;
-  padding-right: 50px;
-  margin-top: 30%;
-  margin-right: 10%;
   font-family: Shojumaru;
   background-image: linear-gradient(to top, rgb(126, 183, 181) 20%, rgb(164, 237, 234) 80%);
+}
+.containerMio.recetasMain .sidebar ul {
+  display: flex;
+  justify-content: space-around;
 }
 @media (max-width: 1010px) {
   .containerMio.recetasMain .sidebar {
@@ -370,11 +382,19 @@ h3 {
     margin: 10px auto;
     justify-self: center;
     align-self: center;
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    flex-direction: column;
+  }
+  .containerMio.recetasMain .sidebar ul {
+    flex-direction: column;
   }
 }
 @media (max-width: 356px) {
   .containerMio.recetasMain .sidebar {
-    width: 80%;
+    width: 90%;
     font-size: 27px;
   }
 }
@@ -385,9 +405,6 @@ h3 {
 }
 .containerMio.recetasMain .sidebar li {
   border-bottom: solid 2px black;
-}
-.containerMio.recetasMain .sidebar li:last-of-type {
-  border-bottom: none;
 }
 .containerMio.recetasMain .sidebar li a {
   text-decoration: none;
